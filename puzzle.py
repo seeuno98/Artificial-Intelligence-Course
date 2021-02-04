@@ -305,8 +305,8 @@ def dfs_solver(id):
     expanded, opt_path = dfs(initial_state)
     save_file(id[:-4]+'sol_dfs.txt', initial_result, opt_path, expanded)
     
-astar_solver('puzzle1.txt')
-astar_solver('puzzle2.txt')
-dfs_solver('puzzle1.txt')
-dfs_solver('puzzle2.txt')
-
+if __name__ == "__main__":
+    astar_solver('puzzle1.txt')
+    astar_solver('puzzle2.txt')
+    dfs_solver('puzzle1.txt')
+    dfs_solver('puzzle2.txt')
